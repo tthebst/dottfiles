@@ -24,7 +24,7 @@ Add this line to `/etc/fstab` to mount on reboot
 ```
 
 ```
-cat > $HOME/eth1.service << EOF 
+cat > $HOME/scratch/eth1.service << EOF 
 [Unit]
 Description     = geth execution client service
 Wants           = network-online.target
