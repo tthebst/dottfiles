@@ -14,13 +14,13 @@ sudo apt install nfs-common
 
 Manual mount
 ```
-sudo mount 192.168.1.124:/volume1/blockchain /home/tim/nfs
+sudo mount  -o v3 192.168.1.124:/volume1/blockchain /home/tim/nfs
 ```
 
 Add this line to `/etc/fstab` to mount on reboot
 
 ```
-192.168.1.124:/volume1/blockchain               /home/tim/nfs      nfs defaults 0 0
+192.168.1.124:/volume1/blockchain	/home/tim/nfs	nfs	auto,defaults,nofail,nfsvers=3 0 0
 ```
 
 ```
