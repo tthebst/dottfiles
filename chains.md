@@ -50,7 +50,7 @@ Wants=network-online.target
 ExecStart=/usr/bin/bitcoind -daemonwait \
                             -pid=/run/bitcoind/bitcoind.pid \
                             -conf=/etc/bitcoin/bitcoin.conf \
-                            -datadir=/var/lib/bitcoind
+                            -datadir=/home/tim/nfs/bitcoind
 
 # Make sure the config directory is readable by the service user
 PermissionsStartOnly=true
